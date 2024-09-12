@@ -46,8 +46,8 @@ const Kontak = () => {
     phone: "",
     service: "",
     message: "",
-    emailSaya: "ramadheayudhistira@gmail.com",
-    namaSaya: "Rama Dhea Yudhistira",
+    emailSaya: "isi dengan email mu",
+    namaSaya: "isi dengan nama mu",
   });
 
   const handleChange = (e) => {
@@ -69,7 +69,7 @@ const Kontak = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        "https://ser.ramdhey.tech/profile/sendEmail",
+        "baseUrl/profile/sendEmail",
         {
           method: "POST",
           headers: {
